@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root{
+    --corRoxo: #cb6ce6;
+    --corAzul: #004aad;
+    --corBranca: #FFFFFF;
+    --corAzulEscuro:#090117;
+    --corCinza:#8D8D8D;
+}
+
+body{
+    background-color: var(--corAzulEscuro); 
+}
+
+.interface{
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid var(--corBranca);
+    border-radius: 8px;
+    color: var(--corBranca);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transform: .5s;
+}
+
+button:hover{
+    background-color:var(--corAzul);
+    color: var(--corAzulEscuro);
+}
+
+h1.titulo-section{
+    font-size: 4rem;
+    color:var(--corBranca) ;
+}
+
+h1.titulo-section span{
+    color: var(--corRoxo);
+}
+
+/* Estilo do cabeçalho */
+header{
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-cabecalho img{
+    max-width: 200px;
+    margin-right: 60px;
+}
+
+header nav.menu_desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu_desktop a{
+    color: var(--corBranca);
+    text-decoration: none;
+    font-size: 1.1rem; 
+    transform: .5s;
+}
+
+header nav.menu_desktop a:hover{
+    color: var(--corAzulEscuro);
+}
+
+header nav.menu_desktop button{
+    width: 144px;
+    height: 48px;
+}
+
+/* Estilo da hero */
+section.hero {
+    background-image: linear-gradient(to left,var(--corAzul) 70%, var(--corRoxo) 30%);
+    padding-top: 144px;
+}
+
+.hero > .interface {
+    display: flex;
+    align-items: center;
+    gap:120px;
+}
+
+.hero .img-hero {
+    line-height: 0;
+    width: 100px;
+}
+
+.hero .txt-hero h1{
+    font-size: 3rem;
+    color: var(--corBranca);
+    font-weight: 300;
+}
+
+.hero .txt-hero h1 span{
+    color: var(--corAzul);
+    display: block;
+    font-weight: 550;
+    font-size: 4rem;
+}
+
+.hero .txt-hero p{
+    color: var(--corBranca);
+    line-height: 1.6;
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+
+.hero .txt-hero button{
+    width: 200px;
+    height: 48px;
+}
+
+/* Estilo Sobre Mim */
+section.about{
+    padding: 80px 0;
+}
+
+.about > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 96px;
+}
+
+.about .txt-about p{
+    color: var(--corCinza);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.about .btn-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.btn-redes .inst:hover, .in:hover, .github:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+}
+
+/* Estilos das minhas skills */
+section.skills{
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
+
+.skills h2.subt{
+    margin: 20px 0 10px 0;
+}
+
+.skills article.hard {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 10px 0;
+}
+
+.icon-skills{
+    background-color: var(--corAzulEscuro);
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.icon-skills h2{
+    color: var(--corBranca);
+    text-align: center;
+    
+}
+
+.icon-skills img{
+    max-width: 80px;
+}
+
+.skills .btn-contato{
+    text-align: center;
+
+}
+
+.skills .btn-contato button{
+   width: 200px;
+   height: 48px;
+}
+
+
+
+
