@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/style.css">
 
         <!--Fontes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,14 +37,11 @@
         </header>
 
         <main>
-
             <!-- HERO SECTION (Banner Inicial) -->
             <section class="hero">
                 <div class="interface">
-                    <div class="img-hero">
-
-                        <img src="Img/Photo_Perfil.jpeg" alt="Foto de perfil da Juliana Mendes">
-
+                    <div>
+                        <img src="Img/Photo_Perfil.jpeg" alt="Foto de perfil da Juliana Mendes" class="img-hero">
                     </div>
 
                     <div class="txt-hero">
@@ -121,23 +118,23 @@
                 <article class="soft">
 
                     <div class="soft-skills">
-                        <h3>Aprendizado contínuo e proatividade</h3>
+                        <h2>Aprendizado contínuo e proatividade</h2>
                     </div>
 
                     <div class="soft-skills">
-                        <h3>Trabalho em equipe</h3>
+                        <h2>Trabalho em equipe</h2>
                     </div>
 
                     <div class="soft-skills">
-                        <h3>Adaptabilidade</h3>
+                        <h2>Adaptabilidade</h2>
                     </div>
 
                     <div class="soft-skills">
-                        <h3>Flexibilidade e resiliência</h3>
+                        <h2>Flexibilidade e resiliência</h2>
                     </div>
 
                     <div class="soft-skills">
-                        <h3>Criatividade</h3>
+                        <h2>Criatividade</h2>
                     </div>
                 </article>
 
@@ -146,32 +143,38 @@
                 </div>
                 
             </div>
-         </section>
+            </section>
 
             <!--SERVIÇOS-->
-            <section id="servicos">
-                <h2>Serviços</h2>
-                <article>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de sites modernos, responsivos e personalizados.</p>
-                </article>
+            <section class="servicos">
+            <div class="interface">
+                <h1 class="titulo-section">Serviços</h1>
+                <article class="serv">
+                    <div class="txt-serv">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Criação de sites modernos, responsivos e personalizados.</p>
+                    </div>
 
-                <article>
-                    <h3>Desenvolvimento de Sistemas</h3>
-                    <p>Soluções sob medida com integração a banco de dados.</p>
-                </article>
+                    <div class="txt-serv">
+                        <h3>Desenvolvimento de Sistemas</h3>
+                        <p>Soluções sob medida com integração a banco de dados.</p>
+                    </div>
 
-                <article>
-                    <h3>Banco de Dados</h3>
-                    <p>Modelagem, implementação e gerenciamento de dados.</p>
+                    <div class="txt-serv">
+                        <h3>Banco de Dados</h3>
+                        <p>Modelagem, implementação e gerenciamento de dados.</p>
+                    </div>
                 </article>
+            </div>
             </section>
 
           </main>
 
         <!--PROJETOS-->
-        <section id="projetos">
-            <h2>Projetos Recentes</h2>
+        <section class="projetos">
+        <div class="interface">
+
+            <h1 class="titulo-section">Projetos <span>Recentes</span></h1>
             <article>
                 <img src="Img/Barbearia_home_1.png" alt="Projeto: Site da Barbearia Alura" width="300">
                 <h3>Landing Page desenvolvida para uma barbearia fictícia, com o objetivo de apresentar os serviços oferecidos, seus benefícios e a identidade da marca.</h3>
@@ -202,18 +205,20 @@
                 <p><strong>Tecnologias utilizadas:</strong> Java para a implementação do sistema e MySQL como banco de dados.</p>
             </article>
 
+        </div>
         </section>
 
-
          <!-- CONTATO -->
-        <section id="contato">
-            <h2>Entre em Contato</h2>
+        <section class="contato">
+        <div class="interface">
+            <h1 class="titulo-section">Entre <span>em Contato</span></h1>
             <from>
                 <input type="text" placeholder="Nome" required>
                 <input type="email" placeholder="Email" required>
                 <textarea placeholder="Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </from>
+        </div>
         </section>
 
         <!-- FOOTER -->

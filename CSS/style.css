@@ -9,12 +9,14 @@
     --corRoxo: #cb6ce6;
     --corAzul: #004aad;
     --corBranca: #FFFFFF;
-    --corAzulEscuro:#090117;
-    --corCinza:#8D8D8D;
+    --corAzulEsc:#090117;
+    --corCinzaMed:#8D8D8D;
+    --corCarvao:#333333;
+    --corCinzaEsc:#3b3b3b;
 }
 
 body{
-    background-color: var(--corAzulEscuro); 
+    background-color: var(--corAzulEsc); 
 }
 
 .interface{
@@ -34,8 +36,8 @@ button{
 }
 
 button:hover{
-    background-color:var(--corAzul);
-    color: var(--corAzulEscuro);
+    background-color:var(--corAzulEsc);
+    color: var(--corBranca);
 }
 
 h1.titulo-section{
@@ -81,7 +83,7 @@ header nav.menu_desktop a{
 }
 
 header nav.menu_desktop a:hover{
-    color: var(--corAzulEscuro);
+    color: var(--corAzulEsc);
 }
 
 header nav.menu_desktop button{
@@ -93,17 +95,23 @@ header nav.menu_desktop button{
 section.hero {
     background-image: linear-gradient(to left,var(--corAzul) 70%, var(--corRoxo) 30%);
     padding-top: 144px;
+    padding-bottom: 40px;
 }
 
 .hero > .interface {
     display: flex;
     align-items: center;
     gap:120px;
+    border-bottom: 2px
 }
 
 .hero .img-hero {
-    line-height: 0;
-    width: 100px;
+    width:380px;
+    height: 380px;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 50%;
+    position: relative;
 }
 
 .hero .txt-hero h1{
@@ -115,7 +123,7 @@ section.hero {
 .hero .txt-hero h1 span{
     color: var(--corAzul);
     display: block;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 4rem;
 }
 
@@ -144,7 +152,7 @@ section.about{
 }
 
 .about .txt-about p{
-    color: var(--corCinza);
+    color: var(--corCinzaMed);
     text-align: justify;
     line-height: 1.6;
     margin: 24px 0;
@@ -172,24 +180,24 @@ section.skills{
     margin: 20px 0 10px 0;
 }
 
-.skills article.hard {
+.skills article.hard,
+.skills article.soft {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 16px;
     margin: 10px 0;
-}
-
-.icon-skills{
-    background-color: var(--corAzulEscuro);
+    background-color: var(--corAzulEsc);
     padding: 24px;
     border-radius: 16px;
     text-align: center;
 }
 
-.icon-skills h2{
+.skills article.soft {
+    display: list;
+}
+.icon-skills h2, .soft-skills h2{
     color: var(--corBranca);
     text-align: center;
-    
 }
 
 .icon-skills img{
@@ -206,6 +214,58 @@ section.skills{
    height: 48px;
 }
 
+/* Estilo da Serviços */
+section.servicos{
+    padding: 80px 0;
+}
 
+.servicos > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 96px;
+}
+.servicos h2{
+    margin: 20px 0 10px 0;
+    color: var(--corBranca)
+}
+
+.servicos .txt-serv h3 {
+
+    color: var(--corCarvao);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+    
+}
+.txt-serv p{
+    color: var(--corCinzaMed);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+/* Estilo da Projetos */
+section.projetos{
+    padding: 80px 0;
+    background-color: var(--corAzul);
+}
+
+.projetos > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 96px;
+}
+
+/* Estilo da Contatos */
+section.contato{
+    padding: 80px 0;
+}
+
+.contato> .interface {
+    display: flex;
+    justify-content: space-around;
+    gap: 96px;
+}
 
 

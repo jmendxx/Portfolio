@@ -1,4 +1,4 @@
-# 🌐 Portfólio Pessoal
+# Portfólio Pessoal
 
 ## 📋 Descrição do Projeto
 
@@ -48,5 +48,5 @@ Portfolio/
 
 ## 👩‍💻 Autoria
 
-Desenvolvido por **Juliana Mendes**
-Disciplina: **Programação Web – Newton Paiva**
+Desenvolvido por **Juliana Mendes**.
+Disciplina: **Programação Web – Newton Paiva**.
