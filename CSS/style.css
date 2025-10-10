@@ -32,12 +32,14 @@ button{
     color: var(--corBranca);
     cursor: pointer;
     font-size: 1.1rem;
+    font-weight: 400;
     transform: .5s;
 }
 
 button:hover{
-    background-color:var(--corAzulEsc);
-    color: var(--corBranca);
+    background-color:var(--corRoxo);
+    color: var(--corAzulEsc);
+    border-color: var(--corRoxo);
 }
 
 h1.titulo-section{
@@ -178,10 +180,18 @@ section.skills{
 
 .skills h2.subt{
     margin: 20px 0 10px 0;
+    text-align: center;
 }
 
-.skills article.hard,
-.skills article.soft {
+.skills .skills-container{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: space-around;
+    gap: 96px;
+    margin-top: 40px;
+}
+
+.skills article.hard .hards-icons{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 16px;
@@ -192,9 +202,19 @@ section.skills{
     text-align: center;
 }
 
-.skills article.soft {
-    display: list;
+.skills article.soft .txt-soft {
+    margin: 10px 0;
+    background-color: var(--corAzulEsc);
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    
 }
+
+.skills article.soft h2 {
+    margin-top: 16px;
+}
+
 .icon-skills h2, .soft-skills h2{
     color: var(--corBranca);
     text-align: center;
@@ -206,6 +226,7 @@ section.skills{
 
 .skills .btn-contato{
     text-align: center;
+    margin-top: 24px;
 
 }
 
@@ -219,12 +240,13 @@ section.servicos{
     padding: 80px 0;
 }
 
-.servicos > .interface {
+.servicos article.serv {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 96px;
 }
+
 .servicos h2{
     margin: 20px 0 10px 0;
     color: var(--corBranca)
@@ -244,28 +266,132 @@ section.servicos{
     line-height: 1.6;
     margin: 24px 0;
 }
+
 /* Estilo da Projetos */
 section.projetos{
     padding: 80px 0;
-    background-color: var(--corAzul);
+    background-color: var(--corAzulEsc);
 }
 
-.projetos > .interface {
+.projetos .projeto-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 80px;
+}
+
+.projeto-container .projeto-box {
+    min-width: 200px;
+    height: 400px;
+    border: 2px solid var(--corRoxo);
+    border-radius: 16px;
+
+    background-size: cover;
+    background-position-y: 0%;
+    transition: background-position-y 10s;
+
+    position: relative;
+
+}
+
+.projeto-container .projeto-box .infor-projeto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d0c6694;
+    border-radius: 14px;
+
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 96px;
+    justify-content: center;
+    color: var(--corBranca);
+    font-size: 18px;
+    font-weight: 900;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.projeto-container .projeto-box .infor-projeto:hover{
+    opacity: 1;
+}
+
+.projeto-container .projeto-box:hover{
+    background-position-y: 100%;
+}
+
+.projeto-container .proj1{
+    background-image: url(../IMG/Projetos/Barbearia-alura.png);
+}
+
+.projeto-container .proj2{
+    background-image: url(../IMG/Projetos/Jogo-numero-secreto.png);
+    
+}
+
+.projeto-container .proj3{
+    background-image: url(../IMG/Projetos/Hotel-Star.png);
 }
 
 /* Estilo da Contatos */
 section.contato{
     padding: 80px 0;
+    background-color: var(--corAzul);
 }
 
-.contato> .interface {
+.contato > .interface {
     display: flex;
-    justify-content: space-around;
-    gap: 96px;
+    justify-content: space-between;
 }
 
+.contato .txt-contato p{
+    color: var(--corCinzaMed);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
 
+.contato .txt-contato p i{
+    color: var(--corRoxo);
+    font-size: 2rem;
+}
+
+.contato form{
+    width: 50%;
+}
+
+.contato form input, .contato form textarea {
+    width: 100%;
+    padding: 16px 10px;
+    background-color: transparent;
+    border: 2px solid var(--corRoxo);
+    outline: none;
+    color: var(--corBranca);
+
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.contato from textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contato form .btn-enviar input{
+    border-color: var(--corBranca);
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.contato form .btn-enviar input:hover{
+    background-color: var(--corRoxo);
+    color: var(--corAzulEsc);
+    border-color: var(--corRoxo);
+}
