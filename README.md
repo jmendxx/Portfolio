@@ -42,7 +42,7 @@ Portfolio/
 
 ## 🌎 Link para o Site Publicado
 
-👉 [Acesse o portfólio aqui]([https://jmendxx.github.io/portfolio]https://jmendxx.github.io/Portfolio/)
+👉 [Acesse o portfólio aqui](https://jmendxx.github.io/Portfolio/)
 
 ---
 
