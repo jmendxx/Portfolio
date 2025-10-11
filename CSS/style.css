@@ -390,15 +390,15 @@ section.projetos{
 }
 
 .projeto-container .proj1{
-    background-image: url(../IMG/Projetos/Barbearia-alura.png);
+    background-image: url(../img/Projetos/Barbearia-alura.png);
 }
 
 .projeto-container .proj2{
-    background-image: url(../IMG/Projetos/Jogo-numero-secreto.png);
+    background-image: url(../img/Projetos/Jogo-numero-secreto.png);
 }
 
 .projeto-container .proj3{
-    background-image: url(../IMG/Projetos/Hotel-Star.png);
+    background-image: url(../img/Projetos/Hotel-Star.png);
 }
 
 /* Estilo da Contatos */
