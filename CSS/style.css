@@ -177,6 +177,7 @@ section.hero {
     object-position: center;
     border-radius: 50%;
     position: relative;
+    border: 2px solid var(--corRoxo);
 }
 
 .hero .txt-hero h1{
