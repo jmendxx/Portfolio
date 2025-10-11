@@ -65,8 +65,8 @@
 
                     <div class="txt-hero">
                         <h1>Olá, eu sou a Juliana
-                        <span>Desenvolvedora | Apaixonada por Tecnologia</span></h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo natus pariatur, deserunt necessitatibus id atque harum odio animi! Aperiam sunt voluptates eligendi accusamus, iure architecto perferendis odio est suscipit dicta?</p>
+                        <span>Desenvolvedora e Apaixonada por Tecnologia</span></h1>
+                        <p>Sou dedicada a transformar ideias em soluções digitais criativas e funcionais. Tenho interesse por desenvolvimento de sistemas, design intuitivo e inovação tecnológica. Gosto de aprender continuamente e enfrentar novos desafios no mundo da programação.</p>
                         <a href="#contato"><button>Entre em contato</button></a>
                     </div>
                 </div>
@@ -270,12 +270,12 @@
                         <p><i class="bi bi-envelope-at"></i>mendx.dev@gmail.com</p>
                     </div>
 
-                    <form action="#">
+                    <form id="form">
 
-                        <input type="text" id="nome" placeholder="Seu nome completo" required>
-                        <input type="email" id="email" placeholder="Seu e-mail" required>
-                        <input type="text" id="assunto" placeholder="O que você quer criar?" required>
-                        <textarea id="mensagem" placeholder="Fale sobre a sua ideia" required></textarea>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                        <input type="text" name="assunto" id="assunto" placeholder="O que você quer criar?" required>
+                        <textarea name="mensagem" id="mensagem"   placeholder="Fale sobre a sua ideia" required></textarea>
 
                         <div class="btn-enviar">
                             <input type="submit" value="Enviar">
@@ -304,6 +304,7 @@
             </div>
          </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="JS/script.js"></script>
     </body>
 </html>
