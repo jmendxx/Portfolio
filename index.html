@@ -4,6 +4,7 @@
         <meta charset="UTF-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/responsivo.css">
 
         <!--Fontes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
         <title>Portifólio de Juliana</title>
+
     </head>
     <body>
         <!--HEADER-->
@@ -27,18 +29,35 @@
                     <ul>
                         <li><a href="#hero">Início</a></li>
                         <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#contato"><button>Contato</button></a></li>
                     </ul>
                 </nav>
+                
+                <div class="btn-menu-mobile" id="btn-menu-mobile">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <nav class="menu-mobile" id="menu-mobile">
+                        <i class="bi bi-x-lg"></i>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
             </div>
         </header>
 
         <main>
             <!-- HERO SECTION (Banner Inicial) -->
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="interface">
                     <div>
                         <img src="Img/Photo_Perfil.jpeg" alt="Foto de perfil da Juliana Mendes" class="img-hero">
@@ -54,7 +73,7 @@
             </section>
 
             <!--ABOUT-->
-            <section class="about">
+            <section class="about" id="about">
                 <div class="interface">
 
                     <div class="txt-about">
@@ -79,7 +98,7 @@
             </section>
 
             <!-- SKILLS (Soft e Hard) -->
-            <section class="skills">
+            <section class="skills" id="skills">
              <div class="interface">
 
                 <h1 class="titulo-section">Minhas <span>skills</span></h1>
@@ -156,7 +175,7 @@
             </section>
 
             <!--SERVIÇOS
-            <section class="servicos">
+            <section class="servicos" id="servicos">
                 <div class="interface">
 
                 <h1 class="titulo-section">Serviços</h1>
@@ -180,99 +199,111 @@
             </div>
             </section>-->
 
-          </main>
+          
 
-        <!--PROJETOS-->
-        <section class="projetos">
-            <div class="interface">
+            <!--PROJETOS-->
+            <section class="projetos" id="projetos">
+                <div class="interface">
 
-                <h1 class="titulo-section">Projetos <span>Recentes</span></h1>
+                    <h1 class="titulo-section">Projetos <span>Recentes</span></h1>
 
-                <article class="projeto-container">
+                    <article class="projeto-container">
 
-                    <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/barbearia_alura" target="_blank">
-                        <div class="projeto-box proj1">
-                            <div class="infor-projeto">Barbearia Alura</div>
-                        </div>
-                    </a>
+                        <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/barbearia_alura" target="_blank">
+                            <div class="projeto-box proj1">
+                                <div class="infor-projeto">Barbearia Alura</div>
+                            </div>
+                        </a>
 
-                    <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/logica-js-projeto_inicial" target="_blank">
-                        <div class="projeto-box proj2">
-                            <div class="infor-projeto">Jogo dos número secretos</div>
-                        </div>
-                    </a>
+                        <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/logica-js-projeto_inicial" target="_blank">
+                            <div class="projeto-box proj2">
+                                <div class="infor-projeto">Jogo dos número secretos</div>
+                            </div>
+                        </a>
 
-                    <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/Hotel-Star" target="_blank">
-                        <div class="projeto-box proj3">
-                            <div class="infor-projeto">Hotel Star</div>
-                        </div>
-                    </a>
-                </article>
-                
-                <!--<article>
-                    <img src="Img/Barbearia_home_1.png" alt="Projeto: Site da Barbearia Alura" width="300">
-                    <h3>Landing Page desenvolvida para uma barbearia fictícia, com o objetivo de apresentar os serviços oferecidos, seus benefícios e a identidade da marca.</h3>
-                    <p>O site conta com uma seção de localização, destaca o lema da barbearia e possui telas específicas onde o cliente pode:
+                        <a href="https://github.com/jmendxx/Projetos-iniciais/tree/main/Hotel-Star" target="_blank">
+                            <div class="projeto-box proj3">
+                                <div class="infor-projeto">Hotel Star</div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!--<article>
+                        <img src="Img/Barbearia_home_1.png" alt="Projeto: Site da Barbearia Alura" width="300">
+                        <h3>Landing Page desenvolvida para uma barbearia fictícia, com o objetivo de apresentar os serviços oferecidos, seus benefícios e a identidade da marca.</h3>
+                        <p>O site conta com uma seção de localização, destaca o lema da barbearia e possui telas específicas onde o cliente pode:
 
-                    visualizar os serviços e preços,
-                    agendar data e horário, informando seus dados de forma simples e prática.
-                
-                <strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript.</p>
-                </article>
+                        visualizar os serviços e preços,
+                        agendar data e horário, informando seus dados de forma simples e prática.
+                    
+                    <strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                    </article>
 
-                <article>
-                    <img src="Img/JS-Game_Resultado.png" alt="Projeto: Jogo dos número secretos" width="300">
+                    <article>
+                        <img src="Img/JS-Game_Resultado.png" alt="Projeto: Jogo dos número secretos" width="300">
 
-                    <h3>Landing Page simples desenvolvida para que o usuário tente adivinhar o número secreto de 1 a 30.</h3>
+                        <h3>Landing Page simples desenvolvida para que o usuário tente adivinhar o número secreto de 1 a 30.</h3>
 
-                    <p>Esta Landing Page é um jogo interativo simples onde o usuário tenta adivinhar um número secreto. Ao abrir, um pop-up dá boas-vindas ao jogador, seguido de outro explicando que ele deve escolher um número de 1 a 30 em uma caixinha de entrada. Se acertar, aparece uma imagem de vitória; se errar, uma mensagem informa o erro e permite tentar novamente. O número secreto muda a cada partida.
-                
-                <strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript.</p>
-                </article>
-                <article>
-                    <img src="Img/Hotel-Star.png" alt="Projeto: Sistema dessktop de gerenciamento de Hotel" width="300">
+                        <p>Esta Landing Page é um jogo interativo simples onde o usuário tenta adivinhar um número secreto. Ao abrir, um pop-up dá boas-vindas ao jogador, seguido de outro explicando que ele deve escolher um número de 1 a 30 em uma caixinha de entrada. Se acertar, aparece uma imagem de vitória; se errar, uma mensagem informa o erro e permite tentar novamente. O número secreto muda a cada partida.
+                    
+                    <strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                    </article>
+                    <article>
+                        <img src="Img/Hotel-Star.png" alt="Projeto: Sistema dessktop de gerenciamento de Hotel" width="300">
 
-                    <h3>Sistema desktop desenvolvido para um hotel fictício</h3>
+                        <h3>Sistema desktop desenvolvido para um hotel fictício</h3>
 
-                    <p>Este sistema desktop foi desenvolvido para auxiliar a gestão de um hotel. Os funcionários podem cadastrar hóspedes, reservar quartos, realizar check-in e check-out, além de registrar serviços e produtos consumidos pelos hóspedes. O gerente possui todos os acessos dos funcionários, podendo ainda cadastrar informações adicionais, enquanto o administrador tem acesso total, incluindo o cadastro de usuários.</p>
+                        <p>Este sistema desktop foi desenvolvido para auxiliar a gestão de um hotel. Os funcionários podem cadastrar hóspedes, reservar quartos, realizar check-in e check-out, além de registrar serviços e produtos consumidos pelos hóspedes. O gerente possui todos os acessos dos funcionários, podendo ainda cadastrar informações adicionais, enquanto o administrador tem acesso total, incluindo o cadastro de usuários.</p>
 
-                    <p><strong>Tecnologias utilizadas:</strong> Java para a implementação do sistema e MySQL como banco de dados.</p>
-                </article> -->
+                        <p><strong>Tecnologias utilizadas:</strong> Java para a implementação do sistema e MySQL como banco de dados.</p>
+                    </article> -->
 
-            </div>
-        </section>
-
-        <!-- CONTATO -->
-        <section class="contato">
-            <div class="interface">
-
-                <div class="txt-contato">
-                    <h1 class="titulo-section">Entre em <span>Contato</span></h1>  
-                    <p><i class="bi bi-envelope-at"></i>mendx.dev@gmail.com</p>
                 </div>
+            </section>
 
-                <form action="#">
+            <!-- CONTATO -->
+            <section class="contato" id="contato">
+                <div class="interface">
 
-                    <input type="text" id="nome" placeholder="Seu nome completo" required>
-                    <input type="email" id="email" placeholder="Seu e-mail" required>
-                    <input type="text" id="assunto" placeholder="O que você quer criar?" required>
-                    <textarea id="mensagem" placeholder="Fale sobre a sua ideia" required></textarea>
-
-                    <div class="btn-enviar">
-                        <input type="submit" value="Enviar">
+                    <div class="txt-contato">
+                        <h1 class="titulo-section">Entre em <span>Contato</span></h1>  
+                        <p><i class="bi bi-envelope-at"></i>mendx.dev@gmail.com</p>
                     </div>
 
-                </form>
-            </div>
-        </section>
+                    <form action="#">
+
+                        <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        <input type="email" id="email" placeholder="Seu e-mail" required>
+                        <input type="text" id="assunto" placeholder="O que você quer criar?" required>
+                        <textarea id="mensagem" placeholder="Fale sobre a sua ideia" required></textarea>
+
+                        <div class="btn-enviar">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
 
         <!-- FOOTER -->
          <footer>
-            <p>&copy; 2025 Juliana Mendes. Todos os direitos reservados.</p>
-            <ul>
-                <li><a href="https://linkedin.com/in/jmendxx">LinkedIn</a></li>
-                <li><a href="https://github.com/jmendxx">GitHub</a></li>
-            </ul>
+            <div class="interface">
+
+                <div class="logo-footer">
+                    <img src="img/JMENDXX-Logo_Azul-Roxo1.png"  alt="Logotipo do site">
+                    <p>&copy; 2025 Juliana Mendes. Todos os direitos reservados.</p>
+                </div>    
+                
+
+                <div class="btn-redes">
+                    <a href=""><Button class="inst"><i class="bi bi-instagram"></i></Button></a>
+                    <a href=""><Button class="in"><i class="bi bi-linkedin"></i></Button></a>
+                    <a href=""><Button class="github"><i class="bi bi-github"></i></Button></a>
+                </div>
+            </div>
          </footer>
+
+        <script src="JS/script.js"></script>
     </body>
 </html>

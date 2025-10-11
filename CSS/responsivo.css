@@ -1,0 +1,138 @@
+@media (max-width: 1080px){
+
+    h1.titulo-section {
+        font-size: 3rem;
+    }
+
+    /* Estilo do menu mobile */
+    header{
+        background-image: none;
+        background-color: var(--corAzul);
+    }
+
+    .menu_desktop {
+        display: none;
+    }
+
+    .btn-menu-mobile{
+    display: block;
+    }
+
+    /* Estilo hero*/
+    section.hero {
+    width: 100%;
+    }
+
+    .hero > .interface {
+        text-align: center;
+        gap:64px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .img-hero img{
+        max-width: 200px;
+    }
+
+    .hero .txt-hero h1{
+        font-size: 2rem;
+    }
+
+    .hero .txt-hero h1 span{
+        font-size: 2.7rem;
+    }
+
+    .hero .txt-hero p{
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+
+    /* Estilo about */
+    section.about {
+        padding: 30px 0;
+    } 
+
+    .about .txt-about p{
+        line-height: 1.6;
+        margin: 24px 0;
+    }
+
+    .about .btn-redes button, footer .btn-redes button{
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+    /* Estilos das minhas skills */
+    section.skills {
+    padding: 30px 0;
+    }
+
+    .skills h2.subt{
+        margin: 0.2px 0;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .skills .skills-container{
+        grid-template: 1fr / 1fr;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .icon-skills h2, .soft-skills h2{
+        font-size: 1.3rem;
+    }
+
+    .icon-skills img{
+        max-width: 60px;
+    }
+
+    /* Estilo da Projetos */
+    section.projetos {
+        padding: 30px 0;
+    }
+    .projetos h1 {
+        font-size: 2.5rem;
+    }
+    .projetos .projeto-container {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr;
+        gap: 24px;
+        margin-top: 60px;
+    }
+
+    .projeto-container .projeto-box {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* Estilo da Contatos */
+    section.contato {
+        padding: 30px 0;
+    }
+    .contato > .interface {
+        flex-direction: column;
+    }
+    .contato h1 {
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+    }
+
+    .contato form{
+        width: 100%;
+    }
+
+    /* Estilo do rodapé */
+    .footer {
+        padding: 30px 0;
+    }
+
+
+    footer > .interface {
+       flex-direction: column-reverse;
+       gap: 32px;
+       text-align: center;
+    }
+
+}
+
